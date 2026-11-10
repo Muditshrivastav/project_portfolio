@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { MessageSquare, X, Send, Cpu, Calendar, Phone, Sparkles, AlertCircle } from "lucide-react";
-import { resumeData } from "../data/resume";
+import { MessageSquare, X, Send, Cpu, AlertCircle } from "lucide-react";
 
 interface ChatMessage {
   role: "user" | "model";
@@ -88,7 +87,7 @@ export default function AiChatBubble({ isOpen, onClose, onOpen }: AiChatBubblePr
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
     handleSendMessage(inputText);
   };
