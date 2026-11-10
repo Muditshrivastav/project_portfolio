@@ -1,0 +1,6 @@
+{
+  "name": "Mudit Shrivastav Portfolio",
+  "description": "Interactive full-stack portfolio for Mudit Shrivastav, and AI/ML engineer, with categorized skills, interactive project data flow visualizers, and an integrated server-side Gemini AI Chat Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
